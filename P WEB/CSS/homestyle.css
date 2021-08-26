@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 500px;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+td, th{
+    padding: 5px;
+}
+
+td.matricula{
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #363636;
+}
+
+div.buttons button{
+    width: 300px;
+    padding: 10px;
+    margin: 3px;
+}
+
+div.buttons a{
+    text-decoration: none;
+    color: white;
+}
+
+div.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
