@@ -1,9 +1,9 @@
-main{
-  padding: 0 6rem;
-  margin: 1rem 0;
+.students {
+  padding: 6rem;
+  margin-top: 5rem;
 }
 
-table{
+.logs {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -11,22 +11,24 @@ table{
   border-collapse: collapse;
 }
 
-th, td{
+.log__title,
+.log__name {
   text-align: center;
   font-size: 1rem;
   padding: 3rem;
   width: 100vw;
 }
 
-th{
+.log__title {
   font-size: 1.5rem;
 }
 
-tr:nth-child(even){
+.log__line:nth-child(even) {
   background-color: var(--black);
   color: var(--white);
 }
 
-.matricula{
+.log__matricula {
+  text-align: center;
   font-weight: bold;
 }

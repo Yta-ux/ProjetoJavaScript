@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto JavaScript | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
     <div class="contain">
         <header>
-            <div class="header__image"></div>
+            <a href="#"><img src="images/logo_ifal.png" class="header__image" /></a>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
@@ -21,31 +26,77 @@
             </nav>
         </header>
 
-        <main>
+        <main class="main">
             <section class="section main">
-                <img src="images/questions.svg" class="main__image">
-                <div class="questions">
-                    <a class="questions__button" href="quest1.html" target="_blank">Questão 1</a>
-                    <a class="questions__button" href="quest2.html" target="_blank">Questão 2</a>
-                    <a class="questions__button" href="quest3.html" target="_blank">Questão 3</a>
-                    <a class="questions__button" href="quest4.html" target="_blank">Questão 4</a>
-                    <a class="questions__button" href="quest5.html" target="_blank">Questão 5</a>
-                    <a class="questions__button" href="quest6.html" target="_blank">Questão 6</a>
-                    <a class="questions__button" href="quest7.html" target="_blank">Questão 7</a>
-                </div>
+                <img src="images/questions.svg" class="main__image" alt />
             </section>
 
-            <section class="section">
-                <img src="images/questions.svg" class="main__image">
-                <div class="questions">
-                    <a class="questions__button" href="quest1.html" target="_blank">Questão 1</a>
-                    <a class="questions__button" href="quest2.html" target="_blank">Questão 2</a>
-                    <a class="questions__button" href="quest3.html" target="_blank">Questão 3</a>
-                    <a class="questions__button" href="quest4.html" target="_blank">Questão 4</a>
-                    <a class="questions__button" href="quest5.html" target="_blank">Questão 5</a>
-                    <a class="questions__button" href="quest6.html" target="_blank">Questão 6</a>
-                    <a class="questions__button" href="quest7.html" target="_blank">Questão 7</a>
-                </div>
+            <section class="section cards">
+                <a href="questions/quest1.html" class="card">
+                    <img src="images/js1.svg" class="card__image" alt>
+                    <div class="card__content">
+                        <h2 class="card__title">Questão 1</h2>
+                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.</span>
+                    </div>
+                </a>
+                <a href="questions/quest2.html" class="card">
+                    <img src="images/js2.svg" class="card__image" alt>
+                    <div class="card__content">
+                        <h2 class="card__title">Questão 2</h2>
+                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.</span>
+                    </div>
+                </a>
+
+                <a href="questions/quest3.html" class="card">
+                    <img src="images/js3.svg" class="card__image" alt>
+                    <div class="card__content">
+                        <h2 class="card__title">Questão 3</h2>
+                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.</span>
+                    </div>
+                </a>
+
+                <a href="questions/quest4.html" class="card">
+                    <img src="images/js1.svg" class="card__image" alt>
+                    <div class="card__content">
+                        <h2 class="card__title">Questão 4</h2>
+                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.</span>
+                    </div>
+                </a>
+
+                <a href="questions/quest5.html" class="card">
+                    <img src="images/js1.svg" class="card__image" alt>
+                    <div class="card__content">
+                        <h2 class="card__title">Questão 5</h2>
+                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.</span>
+                    </div>
+                </a>
+
+                <a href="questions/quest6.html" class="card">
+                    <img src="images/js1.svg" class="card__image" alt>
+                    <div class="card__content">
+                        <h2 class="card__title">Questão 6</h2>
+                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.</span>
+                    </div>
+                </a>
+
+                <a href="questions/quest7.html" class="card">
+                    <img src="images/js1.svg" class="card__image" alt>
+                    <div class="card__content">
+                        <h2 class="card__title">Questão 7</h2>
+                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.</span>
+                    </div>
+                </a>
+            </section>
+
+            <section class="section contato">
+                <img src="images/questions.svg" class="contato__image" alt />
             </section>
         </main>
     </div>
@@ -53,11 +104,16 @@
     <footer>
         <p class="footer__text">&copy;Projeto Desenvolvido por aluno do Ifal</p>
         <div class="networks">
-          <a class= "network__link" href="#"><img class="social__network" src="images/Facebook.svg"></a>
-          <a class= "network__link" href="#"><img class="social__network" src="images/Instagram Icon.svg"></a>
-          <a class= "network__link" href="#"><img class="social__network" src="images/LinkedIn.svg"></a>
+            <a class="network__link" target="_blank"
+                href="https://github.com/Ednaldo-byte/ProjetoJavaScript/tree/main/P%20WEB"><img class="social__network"
+                    src="images/github.svg"></a>
+            <a class="network__link" target="_blank"
+                href="https://www.linkedin.com/in/%C3%ADtalo-gustavo-310a76207"><img class="social__network"
+                    src="images/linkedin.svg"></a>
+            <a class="network__link" target="_blank" href="https://www.instagram.com/ifalcampuspalmeira/"><img
+                    class="social__network" src="images/instagram.svg"></a>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
