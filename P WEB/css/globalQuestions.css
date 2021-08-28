@@ -5,6 +5,13 @@
     --white: #ffffff;
     --blue: #282933;
     --gray: #808080;
+    --bluelight: #154461;
+    --red: #851E07;
+    --green: #396950;
+    --orange: #AB582E;
+    --darkpink: #5B0A1F;
+    --yellow:#A88127;
+    --darkgreen: #0D2413;
     --bg: #F5F5F5;
     /* --bg-card-dark: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(0, 0, 0, .1));
     --bg-card-light: linear-gradient(to top, rgba(255, 255, 255, .7), rgba(204, 204, 204, .2));
@@ -56,4 +63,13 @@ header{
 
 .menu__link:hover {
     color: var(--gray);
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bg);
+    height: 31.55rem;
 }

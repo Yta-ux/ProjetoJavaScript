@@ -2,8 +2,16 @@
 
 /* MAIN */
 
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bg);
+    height: 31.55rem;
+}
+
 .description{
-    background: var(--blue);
+    background: var(--darkpink);
     padding: 4rem;
     display: flex;
     align-content: space-around;
@@ -51,7 +59,7 @@
     height: 3rem;
     background-color: transparent;
     border-radius: 1rem;
-    border: var(--blue) 2px solid;
+    border: var(--darkpink) 2px solid;
     margin-bottom: .5rem;
     font-size: 16px;
     padding-left: 1rem;
@@ -61,7 +69,7 @@
     width: 20rem;
     height: 3rem;
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--darkpink);
     border-radius: 1rem;
     margin-top: .5rem;
     border: transparent;
