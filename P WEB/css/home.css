@@ -1,5 +1,5 @@
 .section {
-    padding: 7.5rem 6rem;
+    padding: 6.5rem 6rem;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -12,10 +12,47 @@
     font-size: 2.4rem;
     margin-top: 1rem;
 }
-.main__image{
-    max-width: 15%;
+
+.runTime{
+    font-size: 10rem;
+    color: var(--black);
 }
 
+.main__image{
+    width: 15%;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translatey(-20px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+
+.roll__down{
+    width: 1.2rem;
+    height: 1.2rem;
+    animation: go-back 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.section .developer{
+    width: 600px;
+}
 .cards {
     background-color: var(--black);
 }
@@ -57,37 +94,116 @@
 
 /* Formulário */
 
-.contact{
+/* .contact{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .form{
     display: flex;
     flex-direction: column;
-    background-color: var(--black);
-    padding: 5rem 3rem;
+    background: var(--white);
+    padding: 4rem 3rem;
+    border-radius: .2rem;
     width: 40%;
     height: 550px;
+    box-shadow: 0 0 1rem var(--shadow);
+    
 }
 
 .contact__image{
     width: 45%;
 }
 
+.subtitle{
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
 input{
     font-size: 1rem;
     outline: none;
     margin-bottom: 2rem;
+    padding: 0 0 .5rem 0;
     border: none;
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid var(--gray);
+    background-color: transparent;
+    color: var(--black);
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--gray);
+}
+
+textarea{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    border: 1px solid var(--gray);
+}
+
+.send{
+    padding: .5rem;
+    height: 3rem;
+    background: var(--blue-light);
+    color: var(--white);
+    font-size: 15px;
+    border: 0;
+    border-radius: .1rem;
+} */
+
+
+/* Formulário para modo dark */
+
+
+
+.contact{
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background: var(--blue);
+    padding: 4rem 3rem;
+    border-radius: .2rem;
+    width: 40%;
+    height: 550px;
+    box-shadow: 0 0 1.5rem var(--shadow);
+    
+}
+
+.contact__image{
+    width: 45%;
+}
+
+.subtitle{
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+input{
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 2rem;
+    padding: 0 0 .5rem 0;
+    border: none;
+    border-bottom: 1px solid var(--gray);
     background-color: transparent;
     color: var(--white);
 }
 
-input::placeholder{
-    color: var(--white);
+input::placeholder, textarea::placeholder{
+    color: var(--gray);
 }
 
 textarea{
@@ -95,9 +211,21 @@ textarea{
     color: var(--white);
     width: 100%;
     height: 100%;
+    padding: .5rem;
+    margin-bottom: 2rem;
     outline: none;
     background-color: transparent;
     border: none;
     resize: none;
-    border: 1px solid var(--white);
+    border: 1px solid var(--gray);
+}
+
+.send{
+    padding: .5rem;
+    height: 3rem;
+    background: var(--blue-light);
+    color: var(--white);
+    font-size: 15px;
+    border: 0;
+    border-radius: .1rem;
 }

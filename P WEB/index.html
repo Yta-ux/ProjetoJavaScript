@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
@@ -28,11 +28,12 @@
         </header>
 
         <main class="main">
-            <section >
+            <section class="initial">
                 <h2 class="title sr-only">Sobre</h2>
                 <div class="section about">
-                <img src="images/flame4.png" class="main__image" alt />
-            </div>
+                    <img src="images/flame4.png" class="main__image" alt />
+                    <img src="images/setas-duplas-para-baixo.png" alt="Rolar para baixo" class= "roll__down">
+                </div>
             </section>
 
             <section>
@@ -97,8 +98,9 @@
 
             <section>
                 <h2 class="title sr-only">Contato</h2>
-                <div class="section contact">                
+                <div class="section contact">             
                     <form method="GET" class="form">
+                        <h3 class="subtitle">Envie-nos uma mensagem</h3>   
                         <label class="sr-only" for="name">Nome Completo:</label>
                         <input type="text" placeholder="Nome completo" id="name"/>
 
@@ -106,9 +108,8 @@
                         <input type="email" placeholder="Email" id="email"/>
 
                         <label class="sr-only" for="message">Mensagem:</label>
-                        <textarea id="message" placeholder="Mensagem">
-
-                        </textarea>
+                        <textarea id="message" placeholder="Mensagem"></textarea>
+                        <button class="send">Enviar</button>
                     </form>
                     <img src="images/flame2.png" class="contact__image">
             </section>

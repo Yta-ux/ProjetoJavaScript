@@ -2,7 +2,7 @@
   --bg: #F5F5F5;
   --black: #1e2019;
   --blue: #282933;
-  --blue-light: #154461;
+  --blue-light: #2998b7;
   --gray: #808080;
   --green: #396950;
   --orange: #AB582E;
@@ -159,8 +159,29 @@ header {
 .execution {
   display: flex;
   align-items: center;
+  flex-direction: row;
   width: 35%;
 }
+
+/* Questão 5: inputs + button */
+
+.execution .inputs{
+  display: flex;
+  width: 60%;
+  height: 20rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.execution .inputs input{
+  margin-bottom: .3rem;
+}
+
+.saveQuest5{
+  width: 30px;
+}
+
+/* Questão 5: inputs + button*/
 
 .input {
   background-color: transparent;
