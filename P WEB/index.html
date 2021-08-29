@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 
@@ -27,77 +28,92 @@
         </header>
 
         <main class="main">
-            <section class="section main">
-                <img src="images/questions.svg" class="main__image" alt />
+            <section >
+                <h2 class="title sr-only">Sobre</h2>
+                <div class="section about">
+                <img src="images/flame4.png" class="main__image" alt />
+            </div>
             </section>
 
-            <section class="section cards">
+            <section>
+                <h2 class="title sr-only">Questões</h2>
+                <div class="section cards">
                 <a href="questions/quest1.html" class="card">
-                    <img src="images/js1.svg" class="card__image" alt>
+                    <img src="images/javascript.svg" class="card__image" alt>
                     <div class="card__content">
                         <h2 class="card__title">Questão 1</h2>
-                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.</span>
+                        <span class="card__description">Cálculos matemáticos: média, moda e mediana</span>
                     </div>
                 </a>
                 <a href="questions/quest2.html" class="card">
-                    <img src="images/js2.svg" class="card__image" alt>
+                    <img src="images/javascript.svg" class="card__image" alt>
                     <div class="card__content">
                         <h2 class="card__title">Questão 2</h2>
-                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.</span>
+                        <span class="card__description">Cálculos matemáticos</span>
                     </div>
                 </a>
 
                 <a href="questions/quest3.html" class="card">
-                    <img src="images/js3.svg" class="card__image" alt>
+                    <img src="images/javascript.svg" class="card__image" alt>
                     <div class="card__content">
                         <h2 class="card__title">Questão 3</h2>
-                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.</span>
+                        <span class="card__description">Qual número é maior/menor e qual signo ele representa.</span>
                     </div>
                 </a>
 
                 <a href="questions/quest4.html" class="card">
-                    <img src="images/js1.svg" class="card__image" alt>
+                    <img src="images/javascript.svg" class="card__image" alt>
                     <div class="card__content">
                         <h2 class="card__title">Questão 4</h2>
-                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.</span>
+                        <span class="card__description">Verificador de idades</span>
                     </div>
                 </a>
 
                 <a href="questions/quest5.html" class="card">
-                    <img src="images/js1.svg" class="card__image" alt>
+                    <img src="images/javascript.svg" class="card__image" alt>
                     <div class="card__content">
                         <h2 class="card__title">Questão 5</h2>
-                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.</span>
+                        <span class="card__description">Verificação de altura, peso, data de nascimento e sexo</span>
                     </div>
                 </a>
 
                 <a href="questions/quest6.html" class="card">
-                    <img src="images/js1.svg" class="card__image" alt>
+                    <img src="images/javascript.svg" class="card__image" alt>
                     <div class="card__content">
                         <h2 class="card__title">Questão 6</h2>
-                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.</span>
+                        <span class="card__description">Embaralhando conjunto  de nomes</span>
                     </div>
                 </a>
 
                 <a href="questions/quest7.html" class="card">
-                    <img src="images/js1.svg" class="card__image" alt>
+                    <img src="images/javascript.svg" class="card__image" alt>
                     <div class="card__content">
                         <h2 class="card__title">Questão 7</h2>
-                        <span class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.</span>
+                        <span class="card__description">Verificador de datas.</span>
                     </div>
                 </a>
+            </div>
             </section>
 
-            <section class="section contato">
-                <img src="images/questions.svg" class="contato__image" alt />
+            <section>
+                <h2 class="title sr-only">Contato</h2>
+                <div class="section contact">                
+                    <form method="GET" class="form">
+                        <label class="sr-only" for="name">Nome Completo:</label>
+                        <input type="text" placeholder="Nome completo" id="name"/>
+
+                        <label class="sr-only" for="email">Email:</label>
+                        <input type="email" placeholder="Email" id="email"/>
+
+                        <label class="sr-only" for="message">Mensagem:</label>
+                        <textarea id="message" placeholder="Mensagem">
+
+                        </textarea>
+                    </form>
+                    <img src="images/flame2.png" class="contact__image">
             </section>
+        </div>
+
         </main>
     </div>
 
