@@ -7,52 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Javascript | Questão 6</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/global.css">
-    <!-- <link rel="stylesheet" href="../css/styleQuest6.css"> -->
+    <link rel="stylesheet" href="../css/q6.css">
 </head>
 
 <body>
 
     <header>
         <a href="../index.html"><img src="../images/logo_ifal.png" class="header__image" /></a>
+
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="../index.html">Equipe</a></li>
+                <li class="menu__item"><a class="menu__link" href="../team.html">Equipe</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <div class="request">
-            <section class="description">
+        <section class="request">
+            <div class="description">
                 <h1>Questão 6</h1>
-                <p>Embaralhador de nomes feito a partir da inserção de 10 (nomes) notas que devem ser inseridas no campo
-                    ao lado.</p>
-            </section>
+                <p>Random de nomes feito a partir da inserção de 10 nomes que devem ser inseridas no campo ao lado.</p>
+            </div>
 
-            <section class="execution">
+            <div class="execution">
                 <input type="number" class="input" placeholder="Digite o nome">
                 <button class="save">Salvar</button>
-            </section>
-        </div>
-        <div class="response">
-            <section class="description">
-                <h1>Questão 6</h1>
-                <p>Embaralhando conjunto de nomes</p>
-                <p>Embaralhador de nomes feito a partir da inserção de 10 (nomes) notas que devem ser inseridas no campo
-                    ao lado.</p>
-            </section>
-
-            <section class="execution">
-                <input type="number" class="input" placeholder="Digite o nome">
-                <button class="save">Salvar</button>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="response" id="response">
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UZw8VLhtKDQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="area"></div>
+        </section>
+        <section>
+            <nav class="navigations">
+                <a href="../index.html" class="navigation return">Voltar</a>
+                <a href="q7.html" class="navigation next">Próxima Questão</a>
+            </nav>
+        </section>
     </main>
     <footer>
         <p class="footer__text">&copy;Projeto Desenvolvido por aluno do Ifal</p>

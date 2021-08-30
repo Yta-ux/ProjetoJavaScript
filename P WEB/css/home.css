@@ -13,48 +13,26 @@
     margin-top: 1rem;
 }
 
-.runTime{
-    font-size: 10rem;
-    color: var(--black);
-}
-
-.main__image{
-    width: 15%;
-}
-
-@keyframes go-back {
-    0% {
-        transform: translatey(-20px);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100% {
-        transform: translatey(0);
-    }
-}
-
-.roll__down{
-    width: 1.2rem;
-    height: 1.2rem;
-    animation: go-back 1.5s;
-    animation-iteration-count: infinite;
-}
 
 .about{
+    padding:6rem;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.section .developer{
+.about__image{
     width: 600px;
 }
+
+.about__text{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
 .cards {
-    background-color: var(--black);
+    background-color: var(--blue);
 }
 
 .card {
@@ -89,80 +67,9 @@
 
 .card__description {
     color: var(--gray);
-    font-size: .8rem;
+    font-size: .9rem;
 }
-
 /* Formulário */
-
-/* .contact{
-    display: flex;
-    align-items: center;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    background: var(--white);
-    padding: 4rem 3rem;
-    border-radius: .2rem;
-    width: 40%;
-    height: 550px;
-    box-shadow: 0 0 1rem var(--shadow);
-    
-}
-
-.contact__image{
-    width: 45%;
-}
-
-.subtitle{
-    font-size: 20px;
-    margin-bottom: 1.5rem;
-}
-
-input{
-    font-size: 1rem;
-    outline: none;
-    margin-bottom: 2rem;
-    padding: 0 0 .5rem 0;
-    border: none;
-    border-bottom: 1px solid var(--gray);
-    background-color: transparent;
-    color: var(--black);
-}
-
-input::placeholder, textarea::placeholder{
-    color: var(--gray);
-}
-
-textarea{
-    font-family: 'Montserrat', sans-serif;
-    color: var(--black);
-    width: 100%;
-    height: 100%;
-    padding: .5rem;
-    margin-bottom: 2rem;
-    outline: none;
-    background-color: transparent;
-    border: none;
-    resize: none;
-    border: 1px solid var(--gray);
-}
-
-.send{
-    padding: .5rem;
-    height: 3rem;
-    background: var(--blue-light);
-    color: var(--white);
-    font-size: 15px;
-    border: 0;
-    border-radius: .1rem;
-} */
-
-
-/* Formulário para modo dark */
-
-
 
 .contact{
     display: flex;
@@ -172,9 +79,9 @@ textarea{
 .form{
     display: flex;
     flex-direction: column;
-    background: var(--blue);
+    background-color: var(--blue);
     padding: 4rem 3rem;
-    border-radius: .2rem;
+    border-radius: 5px;
     width: 40%;
     height: 550px;
     box-shadow: 0 0 1.5rem var(--shadow);
@@ -186,7 +93,7 @@ textarea{
 }
 
 .subtitle{
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: var(--white);
 }
@@ -207,7 +114,8 @@ input::placeholder, textarea::placeholder{
 }
 
 textarea{
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
     color: var(--white);
     width: 100%;
     height: 100%;
@@ -228,4 +136,5 @@ textarea{
     font-size: 15px;
     border: 0;
     border-radius: .1rem;
+    cursor: pointer;
 }
