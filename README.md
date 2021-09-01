@@ -19,7 +19,7 @@
   - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
   ## 🖇 Executar o Projeto
-  Para executar o projeto, apenas é preciso clonar ele em seu dispositivo e entrar na pasta onde o projeto e:
+  Para executar o projeto, apenas é preciso clonar ele em seu dispositivo e entrar na pasta onde o projeto está e:
 
   - Clone o repositório
     
