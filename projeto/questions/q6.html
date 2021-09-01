@@ -35,11 +35,14 @@
                 <p>Random de nomes feito a partir da inserção de 10 nomes que devem ser inseridas no campo ao lado.</p>
             </div>
 
-            <div class="atribute">
-                <img src="../images/logo_ifal.png" class="atribute__image">
-                <div class="infos">
-                    <p class="infos__name">Ítalo Gustavo</p>
-                    <p class="infos__network">@ita_gustavo</p>
+            <div class="creator">
+                <h2>Criador da questão</h2>
+                <div class="atribute">
+                    <a href="https://www.instagram.com/ednaldo_cordeiro_/" target="_blank"><img src="../images/pic_ednaldo.jpg" class="atribute__image"></a>
+                    <div class="infos">
+                        <p class="infos__name">Ednaldo Cordeiro</p>
+                        <p class="infos__network">@ednaldo_cordeiro_</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,32 +53,32 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <p class="solution__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                repellendus alias laudantium quisquam voluptas iste ipsum, facilis beatae? Recusandae doloribus et
-                consectetur minus voluptate molestias delectus dolore temporibus, qui sequi.</p>
+            <p class="solution__description">Assista ao vídeo caso tenha curiosidade sobre como foi o processo de criação do código JavaScript para aplicação dessa questão.<br>
+            A aplicação está logo abaixo.</p>
         </section>
         <section class="response">
             <div class="execution">
-                <input type="text" id="nome" name="nome" class="input" placeholder="Digite o nome (exemplo: Maria, João)">
+                <input type="text" id="nome" name="nome" class="input"
+                    placeholder="Digite o nome (exemplo: Maria, João)">
 
                 <button class="save" onclick="getNames()">Salvar</button>
-                
+
                 <p id="information__counter"></p>
             </div>
             <div class="area">
 
                 <p id="contador"></p>
-    
+
                 <table>
-                <thead>
-                    <th id="invertida"></th> <!-- Ordem invertida -->
-                    <th id="vogais"></th> <!-- Numero de vogais -->
-                    <th id="aleatoria"></th> <!-- Ordem aleatória -->
-                </thead>
-                <tbody id="tbody">
-            
-                </tbody>
-            </table>
+                    <thead>
+                        <th id="invertida"></th> <!-- Ordem invertida -->
+                        <th id="vogais"></th> <!-- Numero de vogais -->
+                        <th id="aleatoria"></th> <!-- Ordem aleatória -->
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
 
             </div>
         </section>

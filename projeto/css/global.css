@@ -5,7 +5,7 @@
   --black: #1e2019;
   --blue: #282933;
   --blue-light: #2998b7;
-  --gray: #808080;
+  --gray: #9e9d9d;
   --green: #396950;
   --orange: #AB582E;
   --pink-dark: #5B0A1F;
@@ -157,16 +157,24 @@ footer {
   color: var(--white);
 }
 
+.creator{
+  display: flex;
+  flex-direction: column;
+}
+.creator h2{
+  margin-bottom: .75rem;
+}
+
 .atribute {
-  width: 25%;
+  width: 17rem;
   height: 2rem;
   display: flex;
   align-items: center;
-  background-color: var(--bg);
+  background-color: var(--blue);
   padding: 3rem 1rem;
   border-radius: 5px;
   margin-right: 5rem;
-  box-shadow: 5px 5px 90px var(--shadow);
+  box-shadow: 2.5px 2.5px 45px var(--shadow);
   transition: all .2s;
 }
 
@@ -183,7 +191,7 @@ footer {
 
 .infos {
   margin-left: 1rem;
-  color: var(--black);
+  color: var(--white);
   line-height: 2;
 }
 
