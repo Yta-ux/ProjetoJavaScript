@@ -76,18 +76,6 @@
     align-items: center;
 }
 
-.form{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--blue);
-    padding: 4rem 3rem;
-    border-radius: 5px;
-    width: 40%;
-    height: 550px;
-    box-shadow: 0 0 1.5rem var(--shadow);
-    
-}
-
 .contact__image{
     width: 45%;
 }
@@ -107,11 +95,7 @@ input{
     border-bottom: 1px solid var(--gray);
     background-color: transparent;
     color: var(--white);
-}
-
-input::placeholder, textarea::placeholder{
-    color: var(--gray);
-}
+  }
 
 textarea{
     font-size: 1rem;
@@ -126,15 +110,4 @@ textarea{
     border: none;
     resize: none;
     border: 1px solid var(--gray);
-}
-
-.send{
-    padding: .5rem;
-    height: 3rem;
-    background: var(--blue-light);
-    color: var(--white);
-    font-size: 15px;
-    border: 0;
-    border-radius: .1rem;
-    cursor: pointer;
 }

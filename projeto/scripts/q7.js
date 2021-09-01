@@ -1,29 +1,42 @@
+var monthConsole = ""; 
 function nameMonth(month) {
   let monthFull = "";
 
   if (month == "01") {
+    monthConsole = "Janeiro";
     return monthFull = `<span style="color:red">Janeiro</span>`;
   } else if (month == "02") {
+    monthConsole = "Fevereiro";
     return monthFull = `<span style="color:blue">Fevereiro</span>`;
   } else if (month == "03") {
+    monthConsole = "Março";
     return monthFull = `<span style="color:green">Março</span>`;
   } else if (month == "04") {
+    monthConsole = "Abril";
     return monthFull = `<span style="color:palevioletred">Abril</span>`;
   } else if (month == "05") {
+    monthConsole = "Maio";
     return monthFull = `<span style="color:orange">Maio</span>`;
   } else if (month == "06") {
+    monthConsole = "Junho";
     return monthFull = `<span style="color:gray">Junho</span>`;
   } else if (month == "07") {
+    monthConsole = "Julho";
     return monthFull = `<span style="color:purple">Julho</span>`;
   } else if (month == "08") {
+    monthConsole = "Agosto";
     return monthFull = `<span style="color:brown">Agosto</span>`;
   } else if (month == "09") {
-    return monthFull = `<span style="color:black">Setembro</span>`;
+    monthConsole = "Setembro";
+    return monthFull = `<span style="color:pink">Setembro</span>`;
   } else if (month == "10") {
+    monthConsole = "Outubro";
     return monthFull = `<span style="color:violet">Outubro<span>`;
   } else if (month == "11") {
+    monthConsole = "Novembro";
     return monthFull = `<span style="color:coral">Novembro</span>`;
   } else if (month == "12") {
+    monthConsole = "Dezembro";
     return monthFull = `<span style="color:steelblue">Dezembro</span>`;
   }
 }
@@ -51,10 +64,10 @@ function mostraData() {
 
     if (month[0].includes("0") || month[0] !== "0") {
       dates[1].innerHTML = `Mês: ${monthName}`;
-      console.log(`Mês: ${monthName}`);
+      console.log(`Mês: ${monthConsole}`);
     } else {
       dates[1].innerHTML = `Mês: 0${monthName}`;
-      console.log(`Mês: 0${monthName}`);
+      console.log(`Mês: 0${monthConsole}`);
     }
 
     if (year.length === 4) {

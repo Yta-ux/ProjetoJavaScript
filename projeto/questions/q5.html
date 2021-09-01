@@ -33,13 +33,16 @@
                 <p>Verificador de informações básicas de pessoa feito a partir da inserção das informações de 11 (onze)
                     pessoas</p>
             </div>
-            <div class="atribute">
-                <img src="../images/logo_ifal.png" class="atribute__image">
-                <div class="infos">
-                    <p class="infos__name">Ítalo Gustavo</p>
-                    <p class="infos__network">@ita_gustavo</p>
+            <div class="creator">
+                <h2>Criador da questão</h2>
+                <div class="atribute">
+                    <a href="https://www.instagram.com/ita_gustavo/" target="_blank"><img
+                            src="../images/pic_italo.jpg" class="atribute__image"></a>
+                    <div class="infos">
+                        <p class="infos__name">Ítalo Gustavo</p>
+                        <p class="infos__network">@ita_gustavo</p>
+                    </div>
                 </div>
-            </div>
         </section>
         <section class="solution">
             <div class="iframe">
@@ -48,25 +51,34 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <p class="solution__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                repellendus alias laudantium quisquam voluptas iste ipsum, facilis beatae? Recusandae doloribus et
-                consectetur minus voluptate molestias delectus dolore temporibus, qui sequi.</p>
+            <p class="solution__description">Assista ao vídeo caso tenha curiosidade sobre como foi o processo de
+                criação do código JavaScript para aplicação dessa questão.<br>
+                A aplicação está logo abaixo.</p>
         </section>
         <section class="response">
-            <form class="execution q5">
-                <div class="inputs">
-                    <input class="nome input" type="text" placeholder="nome">
-                    <input class="altura input" type="text" placeholder="altura">
-                    <input class="peso input" type="text" placeholder="peso">
-                    <input class="data input" type="date" placeholder="data">
+            <form class="execution contact">
+                <div class="form">
+                    <label class="sr-only" for="nome">Nome</label>
+                    <input type="text" placeholder="Nome" id="nome">
 
-                    <label for="sex"><input type="radio" name="sex" class="masc" value="M">Masculino</label>
-                    <label for="sex"><input type="radio" name="sex" class="fem" value="F">Feminino</label>
+                    <label class="sr-only" for="altura">Altura</label>
+                    <input type="text" placeholder="Altura" id="altura">
 
-                    <input type="button" value="adicionar" class="submit save" onclick="adicionar()">
+                    <label class="sr-only" for="peso">Peso</label>
+                    <input type="text" placeholder="Peso" id="peso">
+
+                    <label class="sr-only" for="data">Data</label>
+                    <input type="date" id="data">
+
+                    <div class="options">
+                        <label for="sex"><input type="radio" name="sex" class="masc" value="M">Masculino</label>
+                        <label for="sex"><input type="radio" name="sex" class="fem" value="F">Feminino</label>
+                    </div>
+                    <input type="button" value="adicionar" class="submit save send" onclick="adicionar()">
                 </div>
             </form>
             <div class="area">
+                <!-- QUESTÃO -->
                 <table>
                     <thead>
                         <th>Nome</th>
@@ -90,6 +102,7 @@
                     <p class="valor"></p>
                 </div>
             </div>
+            <!-- QUESTÃO -->
         </section>
         <section>
             <nav class="navigations">
@@ -98,7 +111,6 @@
         </section>
     </main>
     <footer>
-        <p class="footer__text">Projeto Desenvolvido por aluno do Ifal</p>
         <div class="cabecalho__ifal">
             <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
             <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>

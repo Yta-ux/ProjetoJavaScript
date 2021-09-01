@@ -16,6 +16,7 @@ var menObese = 0;
 
 var button = document.querySelector('.submit');
 var message = document.querySelectorAll('.valor');
+var messages = document.querySelector('.valores');
 var tabela = ``;
 
 function quantSex(sex) {
@@ -89,7 +90,7 @@ function ageNow(age) {
   }
 }
 
-function personObese(imc, sex){
+function personObese(imc, sex) {
   if (imc >= 30) {
     if (sex === 'F') {
       womanObese += 1;
@@ -101,10 +102,10 @@ function personObese(imc, sex){
 }
 
 function cleanInput() {
-  nome = document.querySelector('.nome').value = "";
-  altura = document.querySelector('.altura').value = "";
-  peso = document.querySelector('.peso').value = "";
-  data = document.querySelector('.data').value = "";
+  nome = document.querySelector('#nome').value = "";
+  altura = document.querySelector('#altura').value = "";
+  peso = document.querySelector('#peso').value = "";
+  data = document.querySelector('#data').value = "";
   masc = document.querySelector('.masc');
   fem = document.querySelector('.fem');
   masc.checked = false;
@@ -113,10 +114,10 @@ function cleanInput() {
 
 function adicionar() {
   if (people.length <= 10) {
-    let nome = document.querySelector('.nome').value;
-    let altura = document.querySelector('.altura').value;
-    let peso = document.querySelector('.peso').value;
-    let data = document.querySelector('.data').value;
+    let nome = document.querySelector('#nome').value;
+    let altura = document.querySelector('#altura').value;
+    let peso = document.querySelector('#peso').value;
+    let data = document.querySelector('#data').value;
     let sexo = document.querySelector('input[type="radio"]:checked').value;
 
     let person = {
@@ -136,25 +137,50 @@ function adicionar() {
 
     personObese(imc, person.sexo);
 
-    if(womanObese > menObese){
+    if (womanObese > menObese) {
       obese = `Temos mais mulheres obesas, com uma quantidade de ${womanObese}`
-    } else if(menObese > womanObese){
-      obese = `Temos mais homens obesos, com uma quantidade de ${menObese}`   
-    } else{
-      obese =`Temos a mesma quantidade de mulheres e homens obesos, com uma quantidade de ${menObese}`
+    } else if (menObese > womanObese) {
+      obese = `Temos mais homens obesos, com uma quantidade de ${menObese}`
+    } else {
+      obese = `Temos a mesma quantidade de mulheres e homens obesos, com uma quantidade de ${menObese}`
     }
 
     tabela = `<tr><td>${person.nome}</td><td>${person.sexo}</td><td>${age}</td><td>${person.peso}</td><td>${person.altura}</td><td>${imc}</td></tr>`;
 
     document.querySelector('.tabela').innerHTML += tabela;
 
-    cleanInput();
+    // cleanInput();
   } else {
     button.setAttribute('disabled', 'true');
-    message[0].innerHTML = `Total de Homens ${men}`;
-    message[1].innerHTML = `Total de Mulheres ${woman}`;
-    message[2].innerHTML = `A mulher mais alta é ${nameWoman} com altura de ${heightWoman}m`;
-    message[3].innerHTML = `O homem mais baixo é ${nameMen} com altura de ${heightMen}m`;
-    message[4].innerHTML = obese;
+    messages.classList.add('hide');
+    if (men === 0) {
+      message[0].innerHTML = `Não foi cadastrado homens`;
+    } else {
+      message[0].innerHTML = `Total de Homens: ${men}`;
+    }
+
+    if (woman === 0) {
+      message[1].innerHTML = `Não foi cadastrado mulheres`;
+    } else {
+      message[1].innerHTML = `Total de Homens: ${woman}`;
+    }
+
+    if (heightWoman === 0) {
+      message[2].innerHTML = `Não existe mulher mais alta`;
+    } else {
+      message[2].innerHTML = `A mulher mais alta é ${nameWoman} com altura de ${heightWoman}m`;
+    }
+
+    if (heightMen === 999) {
+      message[2].innerHTML = `Não existe homem mais baixo`;
+    } else {
+      message[2].innerHTML = `O homem mais baixo é ${nameMen} com altura de ${heightMen}m`;
+    }
+
+    if (womanObese === 0 && menObese === 0) {
+      message[3].innerHTML = `Não existe mulher ou homem obeso`;
+    } else {
+      message[4].innerHTML = obese;
+    }
   }
 }
