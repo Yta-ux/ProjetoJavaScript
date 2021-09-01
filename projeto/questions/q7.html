@@ -30,28 +30,44 @@
         <section class="request">
             <div class="description">
                 <h1>Questão 7</h1>
-                <p>Verificação e identificação da data inserida feito a partir da inserção da data no formato
-                    dia/mês/ano (com as barras) que devem ser inseridas no campo ao lado.</p>
+                <p>Verificação e identificação da data inserida feito a partir da inserção da data seguindo o padrão
+                    brasileiro: dd/mm/aaaa, utilizando as barras como separador
+                </p>
             </div>
-
-            <div class="execution">
-                <input type="number" class="input" placeholder="Digite a data (exemplo: 09/09/2007)">
-                <button class="save">Salvar</button>
+            <div class="atribute">
+                <img src="../images/logo_ifal.png" class="atribute__image">
+                <div class="infos">
+                    <p class="infos__name">Ítalo Gustavo</p>
+                    <p class="infos__network">@ita_gustavo</p>
+                </div>
             </div>
         </section>
-        <section class="response" id="response">
+        <section class="solution">
             <div class="iframe">
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UZw8VLhtKDQ"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="area"></div>
+            <p class="solution__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+                repellendus alias laudantium quisquam voluptas iste ipsum, facilis beatae? Recusandae doloribus et
+                consectetur minus voluptate molestias delectus dolore temporibus, qui sequi.</p>
         </section>
         <section>
+            <section class="response">
+                <div class="execution">
+                    <input type="text" class="input date" placeholder="ex: 09/09/2007" maxlength="10">
+                    <button class="save" onclick="mostraData()">Salvar</button>
+                </div>
+                <div class="area">
+                    <p class="dates"></p>
+                    <p class="dates"></p>
+                    <p class="dates"></p>
+                </div>
+
+            </section>
             <nav class="navigations">
-                <a href="q6.html" class="navigation return">Voltar</a>
-                <a href="../index.html" class="navigation next">Voltar para o Início</a>
+                <a href="../index.html" class="navigation return">Voltar ao inicio</a>
             </nav>
         </section>
     </main>
@@ -68,6 +84,7 @@
                     class="social__network" src="../images/instagram.svg"></a>
         </div>
     </footer>
+    <script src="../scripts/q7.js"></script>
 </body>
 
 </html>
