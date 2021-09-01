@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 18px;
+    width: 90%;
+}
+
+
+tr:nth-child(even) {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+th:nth-last-child(1), td:nth-last-child(1){
+    border-left: 1px var(--black) solid;
+}
