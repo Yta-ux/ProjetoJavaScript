@@ -47,24 +47,24 @@
             </div>
         </section>
         <section class="solution">
-            <div class="iframe">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UZw8VLhtKDQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="about">
+                <h2>Você precisa saber...</h2>
+                <img class="about__image" src="../images/flame1.png" alt="">
             </div>
-            <p class="solution__description">Assista ao vídeo caso tenha curiosidade sobre como foi o processo de
-                criação do código JavaScript para aplicação dessa questão.<br>
-                A aplicação está logo abaixo.</p>
+            
+            <p class="solution__description">Insira 10 nomes no campo abaixo para verificar a ordem invertida e aleatória e quantas vogais esse nome tem em uma tabela, que só aparecerá quando os 10 nomes forem inseridos. <br> Não se preocupe pois há um contador que vai lhe alertar quantos nomes faltas para serem preenchidos. <br> Use o botão de deletar a tabela quando a tabela aparecer.</p>
         </section>
         <section class="response">
             <div class="execution">
                 <input type="text" id="nome" name="nome" class="input"
-                    placeholder="Digite o nome (exemplo: Maria, João)">
-
-                <button class="save" onclick="getNames()">Salvar</button>
+                placeholder="Digite o nome (exemplo: Maria, João)">
 
                 <p id="information__counter"></p>
+
+                    <button class="save" onclick="getNames()">Salvar</button>
+                    <button id = "button__delete" class="save" onclick="deleteNames()">Deletar tabela</button>
+
+
             </div>
             <div class="area">
                 <!-- QUESTÃO -->
@@ -72,9 +72,9 @@
 
                 <table>
                     <thead>
-                        <th id="invertida"></th> <!-- Ordem invertida -->
-                        <th id="vogais"></th> <!-- Numero de vogais -->
-                        <th id="aleatoria"></th> <!-- Ordem aleatória -->
+                        <th id="invertida">Ordem invertida</th> <!-- Ordem invertida -->
+                        <th id="vogais">Número de vogais</th> <!-- Numero de vogais -->
+                        <th id="aleatoria">Ordem aleatória</th> <!-- Ordem aleatória -->
                     </thead>
                     <tbody id="tbody">
 
@@ -90,11 +90,14 @@
         </section>
     </main>
     <footer>
-        <div class="cabecalho__ifal">
-            <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
-            <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
-            <p>Informática - Programação Web I - 2021</p>
-            <p>Docente: Ítalo Arruda</p>
+        <div class="cabecalho__logo">
+            <img src="../images/logo_ifal_white.png" alt="Logo do IFAL">
+            <div class="cabecalho__ifal">
+                <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
+                <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
+                <p>Informática - Programação Web I - 2021</p>
+                <p>Docente: Ítalo Arruda</p>
+            </div>
         </div>
         <div class="networks">
             <a class="network__link" target="_blank"

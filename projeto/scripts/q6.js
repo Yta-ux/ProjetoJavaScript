@@ -1,10 +1,13 @@
+
 var names = []
 
 var aleatory = []
 
 var button = document.querySelector("button")
 
-function getNames() {
+counter = 10;
+
+function getNames(){
 
   var objectNames = {
 
@@ -14,71 +17,89 @@ function getNames() {
 
   }
 
-  objectNames.nome = document.querySelector("#nome").value
+    objectNames.nome = document.querySelector("#nome").value
 
+          for( j = 0; j <objectNames.nome.length; j++){
+            if(objectNames.nome[j].includes("a") == true || objectNames.nome[j].includes("A") == true){
+              objectNames.numeroVogais += 1
+            }
+    
+            if(objectNames.nome[j].includes("e") == true || objectNames.nome[j].includes("E") == true){
+              objectNames.numeroVogais += 1
+            }
+    
+            if(objectNames.nome[j].includes("i") == true || objectNames.nome[j].includes("I") == true){
+              objectNames.numeroVogais += 1
+            }
+    
+            if(objectNames.nome[j].includes("o") == true || objectNames.nome[j].includes("O") == true){
+              objectNames.numeroVogais += 1
+            }
+    
+            if(objectNames.nome[j].includes("u") == true || objectNames.nome[j].includes("U") == true){
+              objectNames.numeroVogais += 1
+            }
+          }
+   
+          
+          // Contador - conta a quantidade de nomes restantes, quando o contador for menor ou igual a zero, o conteúdo no html fica vazio
+    counter -= 1
 
-  //var x = Array.from(objectNames.nome)
+    var information__counter = document.getElementById("information__counter")
+    information__counter.innerHTML = `Restam ${counter} nomes`
 
-  for (j = 0; j < objectNames.nome.length; j++) {
-    if (objectNames.nome[j].includes("a") == true || objectNames.nome[j].includes("A") == true) {
-      objectNames.numeroVogais += 1
+    if (counter == 1){
+      information__counter.innerHTML = `Resta ${counter} nome`
     }
-
-    if (objectNames.nome[j].includes("e") == true || objectNames.nome[j].includes("E") == true) {
-      objectNames.numeroVogais += 1
+    if (counter <= 0){
+      information__counter.innerHTML = ``
     }
+         // Contador
 
-    if (objectNames.nome[j].includes("i") == true || objectNames.nome[j].includes("I") == true) {
-      objectNames.numeroVogais += 1
-    }
+    names.unshift(objectNames)
 
-    if (objectNames.nome[j].includes("o") == true || objectNames.nome[j].includes("O") == true) {
-      objectNames.numeroVogais += 1
-    }
-
-    if (objectNames.nome[j].includes("u") == true || objectNames.nome[j].includes("U") == true) {
-      objectNames.numeroVogais += 1
-    }
-  }
-
-
-  names.unshift(objectNames)
-
-  if (names.length % 2 == 0) {
     aleatory.push(objectNames.nome)
-  }
-  else {
-    aleatory.unshift(objectNames.nome)
-  }
 
-  console.log(names)
-  // alert("Adicionado")
+    for (var i = aleatory.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      [aleatory[i], aleatory[j]] = [aleatory[j], aleatory[i]];
+    }
 
-
-  if (names.length == 10) {
-
-    document.getElementById("contador").innerHTML = "Verifique a tabela abaixo"
+    console.log(names)
 
 
-    var table = document.getElementsByTagName("table")[0];
-    var tbody = table.getElementsByTagName("tbody")[0];
+    if(names.length == 10){
 
-    var invertida = document.getElementById("invertida")
-    invertida.innerHTML = "<th>Ordem Invertida</th>"
+      button__delete.innerHTML = "Deletar tabela"
 
-    var vogais = document.getElementById("vogais")
-    vogais.innerHTML = "<th>Número de Vogais</th>"
+      document.getElementById("contador").innerHTML = ""
 
-    var aleatoria = document.getElementById("aleatoria")
-    aleatoria.innerHTML = "<th>Ordem Aleatória</th>"
+      counter = 10
 
-    tbody.innerHTML = ""
-
-    for (var i = 0; i < names.length; i++) {
-      tbody.innerHTML += "<tr><td>" + names[i].nome + "</td><td>" + names[i].numeroVogais + "</td><td>" + aleatory[i] + "</td></tr>"
+     
+      var table = document.getElementsByTagName("table")[0];
+      var tbody = table.getElementsByTagName("tbody")[0];
+  
+      tbody.innerHTML = ""
+    
+    for (var i = 0; i < names.length; i++){
+         tbody.innerHTML += "<tr><td>"+names[i].nome+"</td><td>"+names[i].numeroVogais+"</td><td>"+aleatory[i]+"</td></tr>"
     }
 
 
 
   }
+}
+
+function deleteNames(){
+
+  for (var c = 0; c < 10; c++){
+    names.pop()
+  }
+  console.log(names)
+     
+      var table = document.getElementsByTagName("table")[0];
+      var tbody = table.getElementsByTagName("tbody")[0];
+  
+      tbody.innerHTML = ""
 }
