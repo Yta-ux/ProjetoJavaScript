@@ -44,7 +44,7 @@
   <tr>
     <td align="center">
       <a href="https://github.com/Ednaldo-byte">
-        <img src="https://avatars.githubusercontent.com/u/79111900?v=4" width="100px;" alt="Foto de perfil do gihub de Ednaldo Cordeiro"/><br>
+        <img src="https://avatars.githubusercontent.com/u/79111900?v=4" width="90px;" height="110px;" alt="Foto de perfil do gihub de Ednaldo Cordeiro"/><br>
         <sub>
           <b>Ednaldo Cordeiro</b>
         </sub>
@@ -52,7 +52,7 @@
     </td>
     <td align="center">
       <a href="https://github.com/Yta-ux">
-        <img src="https://avatars.githubusercontent.com/u/62409856?v=4" width="100px;" alt="Foto do perfil do github de Ítalo Gustavo"/><br>
+        <img src="https://avatars.githubusercontent.com/u/62409856?v=4" width="90px;" height="110px;" alt="Foto do perfil do github de Ítalo Gustavo"/><br>
         <sub>
           <b>Ítalo Gustavo</b>
         </sub>
@@ -60,7 +60,7 @@
     </td>
     <td align="center">
       <a href="https://github.com/barbosafausto">
-        <img src="https://avatars.githubusercontent.com/u/62409856?v=4" width="100px;" alt="Foto do Fausto Vital"/><br>
+        <img src=".github/pic_fausto.jpeg" width="90px;" height="110px;" alt="Foto do Fausto Vital"/><br>
         <sub>
           <b>Fausto Vital</b>
         </sub>
@@ -68,7 +68,7 @@
     </td>
     <td align="center">
       <a href="https://www.instagram.com/laviis_leite/">
-        <img src="https://avatars.githubusercontent.com/u/62409856?v=4" width="100px;" alt="Foto da Lavínia Leite"/><br>
+        <img src=".github/pic_lavinia.jpeg" width="90px;" height="110px;" alt="Foto da Lavínia Leite"/><br>
         <sub>
           <b>Lavínia Leite</b>
         </sub>
@@ -76,7 +76,7 @@
     </td>
     <td align="center">
       <a href="https://www.instagram.com/rick_soars/">
-        <img src="https://avatars.githubusercontent.com/u/62409856?v=4" width="100px;" alt="Foto do Ricardo Soares"/><br>
+        <img src=".github/pic_ricardo.jpeg" width="90px;" height="110px;" alt="Foto do Ricardo Soares"/><br>
         <sub>
           <b>Ricardo Soares</b>
         </sub>
