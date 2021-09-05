@@ -1,3 +1,12 @@
+/* 
+-------Lista de Exercício --------
+Curso: Informática
+Disciplina: Programação Web I
+Equipe: 7
+Nome: Ítalo Gustavo de Melo Rodrigues
+Matrícula: 2019321767 
+*/
+
 var people = []
 var limit = 0;
 
@@ -21,9 +30,9 @@ var tabela = ``;
 
 function quantSex(sex) {
   if (sex === 'M') {
-    men += 1
+    men += 1;
   } else if (sex === 'F') {
-    woman += 1
+    woman += 1;
   }
 }
 
@@ -33,35 +42,20 @@ function infoHeight(sex, height, name) {
       heightWoman = height;
       nameWoman = name;
     }
-  }
+  };
 
   if (sex === 'M') {
     if (heightMen > height) {
       heightMen = height;
       nameMen = name;
     }
-  }
+  };
 }
 
 function imcPerson(weight, height) {
   let imc = weight / (height ** 2);
 
   return imc.toFixed(2);
-  // if (imc < 17) {
-  //   return `${imc.toFixed(2)}`
-  // } else if (imc >= 17 && imc < 18.5) {
-  //   return `Abaixo do peso`
-  // } else if (imc >= 18.5 && imc < 25) {
-  //   return `Peso normal`
-  // } else if (imc >= 25 && imc < 30) {
-  //   return `Acima do peso`
-  // } else if (imc >= 30 && imc < 35) {
-  //   return `Obesidade I`
-  // } else if (imc >= 35 && imc < 40) {
-  //   return `Obesidade II(severa)`
-  // } else if (imc >= 40) {
-  //   return `Obesidade III(mórbida)`
-  // }
 }
 
 function ageNow(age) {
@@ -102,10 +96,10 @@ function personObese(imc, sex) {
 }
 
 function cleanInput() {
-  nome = document.querySelector('#nome').value = "";
-  altura = document.querySelector('#altura').value = "";
-  peso = document.querySelector('#peso').value = "";
-  data = document.querySelector('#data').value = "";
+  nome = document.querySelector('.nome').value = "";
+  altura = document.querySelector('.altura').value = "";
+  peso = document.querySelector('.peso').value = "";
+  data = document.querySelector('.data').value = "";
   masc = document.querySelector('.masc');
   fem = document.querySelector('.fem');
   masc.checked = false;
@@ -114,10 +108,10 @@ function cleanInput() {
 
 function adicionar() {
   if (people.length <= 10) {
-    let nome = document.querySelector('#nome').value;
-    let altura = document.querySelector('#altura').value;
-    let peso = document.querySelector('#peso').value;
-    let data = document.querySelector('#data').value;
+    let nome = document.querySelector('.nome').value;
+    let altura = document.querySelector('.altura').value;
+    let peso = document.querySelector('.peso').value;
+    let data = document.querySelector('.data').value;
     let sexo = document.querySelector('input[type="radio"]:checked').value;
 
     let person = {
@@ -149,7 +143,7 @@ function adicionar() {
 
     document.querySelector('.tabela').innerHTML += tabela;
 
-    // cleanInput();
+    cleanInput();
   } else {
     button.setAttribute('disabled', 'true');
     messages.classList.add('hide');

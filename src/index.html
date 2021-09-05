@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto JavaScript | Home</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/q0.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo_ifal.png" class="header__image" /></a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="team.html">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="about">
+            <div>
+                <h1 class="about__title">Projeto JavaScript</h1><br />
+                <p class="about__text">Seja bem-vindo ao Projeto JavaScript, um projeto desenvolvido por alunos do Ifal
+                    Campus Palmeira dos Índios - AL. O projeto foi criado, com a finalidade de práticar os conhecimentos
+                    passados em sala e como atividade avaliativa. Fomos desafiados a resolver 7 desafios de js, que você
+                    pode encontrar o resultado logo abaixo.</p>
+            </div>
+            <img src="images/flame5.png" class="about__image" alt />
+        </section>
+
+        <section class="cards">
+            <h2 class="sr-only">Questões</h2>
+            <a href="questions/q1.html" class="card">
+                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <div class="card__content">
+                    <h2 class="card__title">Questão 1</h2>
+                    <span class="card__description">Cálculos matemáticos: média, moda e mediana</span>
+                </div>
+            </a>
+            <a href="questions/q2.html" class="card">
+                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <div class="card__content">
+                    <h2 class="card__title">Questão 2</h2>
+                    <span class="card__description">Cálculos matemáticos</span>
+                </div>
+            </a>
+
+            <a href="questions/q3.html" class="card">
+                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <div class="card__content">
+                    <h2 class="card__title">Questão 3</h2>
+                    <span class="card__description">Qual número é maior/menor e qual signo ele representa.</span>
+                </div>
+            </a>
+            <a href="questions/q4.html" class="card">
+                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <div class="card__content">
+                    <h2 class="card__title">Questão 4</h2>
+                    <span class="card__description">Verificador de idades</span>
+                </div>
+            </a>
+
+            <a href="questions/q5.html" class="card">
+                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <div class="card__content">
+                    <h2 class="card__title">Questão 5</h2>
+                    <span class="card__description">Verificação de altura, peso, data de nascimento e sexo</span>
+                </div>
+            </a>
+
+            <a href="questions/q6.html" class="card">
+                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <div class="card__content">
+                    <h2 class="card__title">Questão 6</h2>
+                    <span class="card__description">Embaralhando conjunto de nomes</span>
+                </div>
+            </a>
+            <a href="questions/q7.html" class="card last">
+                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <div class="card__content">
+                    <h2 class="card__title">Questão 7</h2>
+                    <span class="card__description">Verificador de datas.</span>
+                </div>
+            </a>
+        </section>
+
+        <section class="contact">
+            <h2 class="sr-only">Contato</h2>
+            <form class="contact__form" action="https://formsubmit.co/itamelo555@gmail.com" method="POST">
+                <h3 class="contact__subtitle">Envie-nos uma mensagem</h3>
+                <label class="sr-only" for="name">Nome Completo:</label>
+                <input type="text" placeholder="Nome completo" id="name" name="name" required/>
+
+                <label class="sr-only" for="email">Email:</label>
+                <input type="email" placeholder="Email" id="email" name="email" required/>
+
+                <label class="sr-only" for="message">Mensagem:</label>
+                <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
+
+                <input type="submit" value="Enviar" class="contact__send">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/send.html">
+            </form>
+            <img src="images/flame2.png" class="contact__image">
+        </section>
+    </main>
+
+    <footer>
+        <div class="ifal">
+            <img src="images/logo_ifal_white.png" class="ifal__image" alt>
+            <div class="ifal__infos">
+            <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
+            <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
+            <p>Informática - Programação Web I - 2021</p>
+            <p>Docente: Ítalo Arruda</p>
+        </div>
+        </div>
+        <div class="networks">
+            <a class="network__link" target="_blank"
+                href="https://github.com/Ednaldo-byte/ProjetoJavaScript/tree/main/P%20WEB"><img class="social__network"
+                    src="images/github.svg"></a>
+            <a class="network__link" target="_blank" href="https://www.linkedin.com/in/%C3%ADtalo-gustavo-310a76207">
+                <img class="social__network" src="images/linkedin.svg">
+            </a>
+            <a class="network__link" target="_blank" href="https://www.instagram.com/ifalcampuspalmeira/"><img
+                    class="social__network" src="images/instagram.svg"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,4 +1,13 @@
-var monthConsole = ""; 
+/* 
+-------Lista de Exercício --------
+Curso: Informática
+Disciplina: Programação Web I
+Equipe: 7
+Nome: Ítalo Gustavo de Melo Rodrigues
+Matrícula: 2019321767 
+*/
+
+var monthConsole = "";
 function nameMonth(month) {
   let monthFull = "";
 
