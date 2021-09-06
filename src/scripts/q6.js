@@ -72,13 +72,11 @@ function getNames() {
 
     button__delete.innerHTML = "Deletar tabela"
 
-    document.getElementById("contador").innerHTML = ""
-
     counter = 10
 
 
-    var table = document.getElementsByTagName("table")[0];
-    var tbody = table.getElementsByTagName("tbody")[0];
+    var table = document.createElement('table');
+    var tableBody = document.createElement('tbody');
 
     tbody.innerHTML = ""
 
