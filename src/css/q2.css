@@ -1,0 +1,27 @@
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: center;
+  padding: .8rem;
+}
+.quadrado {
+  color: red;
+}
+
+.cubo {
+  color: blue;
+}
+
+.fib {
+  color: green;
+}
+
+.fatorial {
+  color: purple;
+}
+
+.raiz {
+  color: gray;
+}

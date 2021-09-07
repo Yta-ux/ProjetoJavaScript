@@ -143,7 +143,7 @@ function adicionar() {
 
     document.querySelector('.tabela').innerHTML += tabela;
 
-    cleanInput();
+    // cleanInput();
   } else {
     button.setAttribute('disabled', 'true');
     messages.classList.add('hide');
@@ -156,7 +156,7 @@ function adicionar() {
     if (woman === 0) {
       message[1].innerHTML = `Não foi cadastrado mulheres`;
     } else {
-      message[1].innerHTML = `Total de Homens: ${woman}`;
+      message[1].innerHTML = `Total de Mulheres: ${woman}`;
     }
 
     if (heightWoman === 0) {

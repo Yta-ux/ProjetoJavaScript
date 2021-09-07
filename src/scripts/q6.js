@@ -1,4 +1,3 @@
-
 var names = []
 
 var aleatory = []
@@ -87,15 +86,15 @@ function getNames() {
   }
 }
 
-function deleteNames() {
+function deleteNames(){
 
-  for (var c = 0; c < 10; c++) {
+  for (var c = 0; c < 10; c++){
     names.pop()
   }
   console.log(names)
-
-  var table = document.getElementsByTagName("table")[0];
-  var tbody = table.getElementsByTagName("tbody")[0];
-
-  tbody.innerHTML = ""
+     
+      var table = document.getElementsByTagName("table")[0];
+      var tbody = table.getElementsByTagName("tbody")[0];
+  
+      tbody.innerHTML = ""
 }
