@@ -1,4 +1,3 @@
-
 var names = []
 
 var aleatory = []
@@ -72,13 +71,11 @@ function getNames() {
 
     button__delete.innerHTML = "Deletar tabela"
 
-    document.getElementById("contador").innerHTML = ""
-
     counter = 10
 
 
-    var table = document.getElementsByTagName("table")[0];
-    var tbody = table.getElementsByTagName("tbody")[0];
+    var table = document.createElement('table');
+    var tableBody = document.createElement('tbody');
 
     tbody.innerHTML = ""
 
@@ -89,15 +86,15 @@ function getNames() {
   }
 }
 
-function deleteNames() {
+function deleteNames(){
 
-  for (var c = 0; c < 10; c++) {
+  for (var c = 0; c < 10; c++){
     names.pop()
   }
   console.log(names)
-
-  var table = document.getElementsByTagName("table")[0];
-  var tbody = table.getElementsByTagName("tbody")[0];
-
-  tbody.innerHTML = ""
+     
+      var table = document.getElementsByTagName("table")[0];
+      var tbody = table.getElementsByTagName("tbody")[0];
+  
+      tbody.innerHTML = ""
 }

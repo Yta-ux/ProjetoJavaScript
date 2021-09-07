@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="../css/q0.css">
+  <link rel="stylesheet" href="../css/q2.css">
 </head>
 
 <body>
@@ -54,11 +55,25 @@
     </section>
     <section class="response">
       <div class="response__execution">
-        <input type="text" class="execution__input" placeholder="Digite a nota">
-        <button class="execution__save">Salvar</button>
+        <input type="text" class="execution__input" id="input" placeholder="Digite o valor">
+        <button class="execution__save" onclick="output()">Submeter</button>
       </div>
 
-      <div class="response__area"></div>
+      <div class="response__area">
+        <table border="1">
+          <thead>
+              <th>Número</th>
+              <th class="quadrado">Quadrado</th>
+              <th class="cubo">Cubo</th>
+              <th class="fib">Fibonacci</th>
+              <th class="fatorial">Fatorial</th>
+              <th class="raiz">Raiz Quadrada</th>
+          </thead>
+          <tbody>
+              
+          </tbody>
+      </table>
+      </div>
     </section>
   </main>
 
@@ -83,6 +98,7 @@
           class="social__network" src="../images/instagram.svg"></a>
     </div>
   </footer>
+  <script src="../scripts/q2.js"></script>
 </body>
 
 </html>

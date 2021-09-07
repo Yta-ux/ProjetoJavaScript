@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="../css/q0.css">
+  <link rel="stylesheet" href="../css/q3.css">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         <h1 class="request__title">Questão 3</h1>
         <p class="request__description">Verificação de qual é o maior/menor valor e associá-los a uma signo dos
           zodíaco, feito a partir da
-          inserção de 9 (nove) notas.</p>
+          inserção de 9 (nove) números.</p>
         <a href="https://www.instagram.com/vitalfausto/" target="_blank" class="request__creator">
           <div class="creator__atribute">
             <img src="../images/pic_fausto.jpeg" class="atribute__image">
@@ -54,17 +55,24 @@
     </section>
     <section class="response">
       <div class="response__execution">
-        <input type="text" class="execution__input" placeholder="Digite a nota">
-        <button class="execution__save">Salvar</button>
+        <input type="text" class="execution__input" id="input" placeholder="Digite os valores">
+        <button class="execution__save" onclick="output()">Submeter</button>
       </div>
 
-      <div class="response__area"></div>
+      <div class="response__area">
+        <span class="p1"></span>
+        <div class="hide" id="line"></div>
+
+        <h5 class="titulo"></h5>
+    
+        <span class="p2"></span>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="ifal">
-      <img src="../images/logo_ifal_white.png" class="ifal__image" alt>
+      <img src="../images/logo_ifal_white.png" src="../images/signos/" class="ifal__image" alt>
       <div class="ifal__infos">
         <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
         <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
@@ -83,6 +91,7 @@
           class="social__network" src="../images/instagram.svg"></a>
     </div>
   </footer>
+  <script src="../scripts/q3.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 
@@ -22,4 +23,24 @@ tr:nth-child(even) {
 
 th:nth-last-child(1), td:nth-last-child(1){
     border-left: 1px var(--black) solid;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 450px) {
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 90%;
+    }
+
+    th{
+        font-size: 13px;
+    }
+
+    td{
+        font-size: 12px;
+    }
 }
