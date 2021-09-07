@@ -1,16 +1,15 @@
-@charset "utf-8";
-
-.area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
+/* -------Lista de Exercício --------
+Curso: Informática
+Disciplina: Programação Web I
+Equipe: 7
+Nome: Ednaldo Cordeiro Lins Junior
+Matrícula: 2019323260  */
 
 
 table{
     text-align: center;
     border-collapse: collapse;
+    padding: .5rem;
     font-size: 18px;
     width: 90%;
 }
@@ -25,7 +24,14 @@ th:nth-last-child(1), td:nth-last-child(1){
     border-left: 1px var(--black) solid;
 }
 
-
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 1rem;
+}
 
 /* RESPONSIVIDADE */
 
@@ -42,5 +48,14 @@ th:nth-last-child(1), td:nth-last-child(1){
 
     td{
         font-size: 12px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1rem;
     }
 }

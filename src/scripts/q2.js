@@ -62,6 +62,9 @@ function output() {
       tbody.innerHTML = "";
       counter++;
   }
+
+  cleanInput()
+
   tbody.innerHTML += `<tr>
       <td>${numero}</td>
       <td class="quadrado">${quadrado(numero)}</td>
@@ -70,4 +73,8 @@ function output() {
       <td class="fatorial">${fatorial(numero)}</td>
       <td class="raiz">${raiz(numero)}</td>
       </tr>`;
+}
+
+function cleanInput() {
+  document.getElementById("input").value = "";
 }
