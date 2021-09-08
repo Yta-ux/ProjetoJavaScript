@@ -35,12 +35,7 @@
       $ cd projeto/
       ```
 
-      
-
-  ##  📃 Licença
-  Esse projeto possui licença MIT. Para mais detalhes consulte o arquivo [LICENSE](LICENSE.md)
-
-  ## 👥 Equipe
+## 👥 Equipe
   <table>
   <tr>
     <td align="center">
@@ -77,7 +72,7 @@
     </td>
     <td align="center">
       <a href="https://www.instagram.com/rick_soars/">
-        <img src=".github/pic_ricardo.jpeg" width="100px;" alt="Foto do Ricardo Soares"/><br>
+        <img src="https://avatars.githubusercontent.com/u/63676590?v=4" width="100px;" alt="Foto do Ricardo Soares"/><br>
         <sub>
           <b>Ricardo Soares</b>
         </sub>
@@ -85,6 +80,11 @@
     </td>
   </tr>
 </table>
+
+  ##  📃 Licença
+  Esse projeto possui licença MIT. Para mais detalhes consulte o arquivo [LICENSE](LICENSE.md)
+
+
 
   ## 📌 Observações
   95% do projeto possui responsividade
