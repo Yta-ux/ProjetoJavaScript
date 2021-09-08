@@ -61,7 +61,7 @@
     </td>
     <td align="center">
       <a href="https://github.com/barbosafausto">
-        <img src=".github/pic_fausto.jpeg" width="100px;" alt="Foto do Fausto Vital"/><br>
+        <img src="https://avatars.githubusercontent.com/u/54441045?v=4" width="100px;" alt="Foto do Fausto Vital"/><br>
         <sub>
           <b>Fausto Vital</b>
         </sub>
