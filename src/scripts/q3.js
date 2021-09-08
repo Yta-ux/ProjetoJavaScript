@@ -30,14 +30,28 @@ var signos = [
   'Porco'
 ]
 
+var counter = 9
+
 function output() {
   numeros.push(parseInt(document.getElementById("input").value))
   document.getElementById("input").value = ""
+
+  counter -= 1
+  let information__counter = document.getElementById("counter")
+  information__counter.innerHTML = `Restam ${counter} números`
+  if (counter == 1){
+    information__counter.innerHTML = `Resta ${counter} número`
+  }
+  if (counter <= 0){
+    information__counter.innerHTML = ""
+  }
 
   if (numeros.length === 9) {
     document.getElementById("input").setAttribute("disabled", true)
     document.getElementById("line").classList.remove("hide")
     numeros.sort(compara)
+
+    information__counter.innerHTML = ""
 
     var p = document.getElementsByTagName("span")[0]
     p.innerHTML = `

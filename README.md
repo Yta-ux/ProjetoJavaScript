@@ -87,4 +87,4 @@
 </table>
 
   ## 📌 Observações
-  Não foi aplicado responsividade no projeto.
+  95% do projeto possui responsividade

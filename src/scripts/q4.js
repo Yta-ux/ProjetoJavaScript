@@ -6,18 +6,19 @@ Equipe: 7
 Nome: Lavínia Leite da Silva
 Matrícula: 2019322657
 */
+var votar = 0;
+var menores = 0;
+var presos = 0;
+var aposentar = 0;
+var prioridade = 0;
+
 
 function exibir(){
     var res = document.querySelector(".idades");
     var ida = document.getElementById("idade").value;
     var id = String(ida);
     var lista = id.split(" ");
-    var votar = 0;
-    var menores = 0;
-    var presos = 0;
-    var aposentar = 0;
-    var prioridade = 0;
-  
+
     
     for(var x = 0; x<lista.length; x++){
         if (lista[x] < 16){

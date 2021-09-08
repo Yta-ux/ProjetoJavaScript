@@ -1,3 +1,11 @@
+/* -------Lista de Exercício --------
+Curso: Informática
+Disciplina: Programação Web I
+Equipe: 7
+Nome: Ednaldo Cordeiro Lins Junior
+Matrícula: 2019323260  */
+
+
 var names = []
 
 var aleatory = []
@@ -40,6 +48,7 @@ function getNames() {
     }
   }
 
+  cleanInput() //limpa o input
 
   // Contador - conta a quantidade de nomes restantes, quando o contador for menor ou igual a zero, o conteúdo no html fica vazio
   counter -= 1
@@ -55,10 +64,13 @@ function getNames() {
   }
   // Contador
 
+
   names.unshift(objectNames)
 
   aleatory.push(objectNames.nome)
 
+
+  // fazer um array ter dados aleatórios
   for (var i = aleatory.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
     [aleatory[i], aleatory[j]] = [aleatory[j], aleatory[i]];
@@ -66,13 +78,13 @@ function getNames() {
 
   console.log(names)
 
-
+  //Verificador - se o tamanho do array que salva os objetos for 10 ele mostra a tabela
   if (names.length == 10) {
 
     button__delete.innerHTML = "Deletar tabela"
 
-    counter = 10
-
+    counter = 0
+    information__counter.innerHTML = ""
 
     var table = document.createElement('table');
     var tableBody = document.createElement('tbody');
@@ -86,15 +98,25 @@ function getNames() {
   }
 }
 
-function deleteNames(){
 
-  for (var c = 0; c < 10; c++){
+// deleta a tabela, zera o contador, e apaga os dados do array
+function deleteNames() {
+
+  for (var c = names.length; c > 0; c--) {
     names.pop()
+    aleatory.pop()
   }
   console.log(names)
-     
-      var table = document.getElementsByTagName("table")[0];
-      var tbody = table.getElementsByTagName("tbody")[0];
-  
-      tbody.innerHTML = ""
+
+  counter = 0
+  information__counter.innerHTML = ""
+
+  tbody.innerHTML = ""
+}
+
+
+//Limpar o input
+
+function cleanInput() {
+  document.getElementById("nome").value = "";
 }
