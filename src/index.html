@@ -7,14 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto JavaScript | Home</title>
 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/q0.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionAbout/about.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionAbout/about-text.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionAbout/about-image.css">
+
+    <link rel="stylesheet" href="assets/css/sections/sectionCards/cards.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionCards/card.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionCards/card-content.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionCards/card-title.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionCards/card-description.css">
+
+    <link rel="stylesheet" href="assets/css/sections/sectionContact/contact.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionContact/contact-form.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionContact/contact-image.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionContact/contact-subtitle.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionContact/input.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionContact/textarea.css">
+    <link rel="stylesheet" href="assets/css/sections/sectionContact/contact-send.css">
+
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="images/logo_ifal.png" class="header__image" /></a>
+        <a href="index.html"><img src="assets/images/logo_ifal.png" class="header__image" /></a>
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
@@ -32,20 +52,22 @@
                     passados em sala e como atividade avaliativa. Fomos desafiados a resolver 7 desafios de js, que você
                     pode encontrar o resultado logo abaixo.</p>
             </div>
-            <img src="images/flame5.png" class="about__image" alt />
+            <img src="assets/images/sobre.png" class="about__image"
+                alt="Imagem em 3d de uma garota disfrutando seu momento de leitura" />
         </section>
 
         <section class="cards">
             <h2 class="sr-only">Questões</h2>
+
             <a href="questions/q1.html" class="card">
-                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <img src="assets/images/javascript.svg" width="75px" alt="logo da linguagem javascript">
                 <div class="card__content">
                     <h2 class="card__title">Questão 1</h2>
                     <span class="card__description">Cálculos matemáticos: média, moda e mediana</span>
                 </div>
             </a>
             <a href="questions/q2.html" class="card">
-                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <img src="assets/images/javascript.svg" width="75px" alt="logo da linguagem javascript">
                 <div class="card__content">
                     <h2 class="card__title">Questão 2</h2>
                     <span class="card__description">Cálculos matemáticos</span>
@@ -53,14 +75,14 @@
             </a>
 
             <a href="questions/q3.html" class="card">
-                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <img src="assets/images/javascript.svg" width="75px" alt="logo da linguagem javascript">
                 <div class="card__content">
                     <h2 class="card__title">Questão 3</h2>
                     <span class="card__description">Qual número é maior/menor e qual signo ele representa.</span>
                 </div>
             </a>
             <a href="questions/q4.html" class="card">
-                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <img src="assets/images/javascript.svg" width="75px" alt="logo da linguagem javascript">
                 <div class="card__content">
                     <h2 class="card__title">Questão 4</h2>
                     <span class="card__description">Verificador de idades</span>
@@ -68,7 +90,7 @@
             </a>
 
             <a href="questions/q5.html" class="card">
-                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <img src="assets/images/javascript.svg" width="75px" alt="logo da linguagem javascript">
                 <div class="card__content">
                     <h2 class="card__title">Questão 5</h2>
                     <span class="card__description">Verificação de altura, peso, data de nascimento e sexo</span>
@@ -76,14 +98,14 @@
             </a>
 
             <a href="questions/q6.html" class="card">
-                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <img src="assets/images/javascript.svg" width="75px" alt="logo da linguagem javascript">
                 <div class="card__content">
                     <h2 class="card__title">Questão 6</h2>
                     <span class="card__description">Embaralhando conjunto de nomes</span>
                 </div>
             </a>
             <a href="questions/q7.html" class="card last">
-                <img src="images/javascript.svg" class="card__image" width="75px" alt>
+                <img src="assets/images/javascript.svg" width="75px" alt="logo da linguagem javascript">
                 <div class="card__content">
                     <h2 class="card__title">Questão 7</h2>
                     <span class="card__description">Verificador de datas.</span>
@@ -96,10 +118,10 @@
             <form class="contact__form" action="https://formsubmit.co/itamelo555@gmail.com" method="POST">
                 <h3 class="contact__subtitle">Envie-nos uma mensagem</h3>
                 <label class="sr-only" for="name">Nome Completo:</label>
-                <input type="text" placeholder="Nome completo" id="name" name="name" required/>
+                <input type="text" placeholder="Nome completo" id="name" name="name" required />
 
                 <label class="sr-only" for="email">Email:</label>
-                <input type="email" placeholder="Email" id="email" name="email" required/>
+                <input type="email" placeholder="Email" id="email" name="email" required />
 
                 <label class="sr-only" for="message">Mensagem:</label>
                 <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
@@ -108,29 +130,28 @@
 
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/send.html">
             </form>
-            <img src="images/flame2.png" class="contact__image">
+            <img src="assets/images/contato.png" class="contact__image">
         </section>
     </main>
 
     <footer>
         <div class="ifal">
-            <img src="images/logo_ifal_white.png" class="ifal__image" alt>
+            <img src="assets/images/logo_ifal_white.png" class="ifal__image" alt>
             <div class="ifal__infos">
-            <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
-            <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
-            <p>Informática - Programação Web I - 2021</p>
-            <p>Docente: Ítalo Arruda</p>
-        </div>
+                <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
+                <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
+                <p>Informática - Programação Web I - 2021</p>
+                <p>Docente: Ítalo Arruda</p>
+            </div>
         </div>
         <div class="networks">
-            <a class="network__link" target="_blank"
-                href="https://github.com/Ednaldo-byte/ProjetoJavaScript/tree/main/P%20WEB"><img class="social__network"
-                    src="images/github.svg"></a>
+            <a class="network__link" target="_blank" href="https://github.com/Ednaldo-byte/ProjetoJavaScript"><img
+                    class="social__network" src="assets/images/github.svg" alt="logo do github"></a>
             <a class="network__link" target="_blank" href="https://www.linkedin.com/in/%C3%ADtalo-gustavo-310a76207">
-                <img class="social__network" src="images/linkedin.svg">
+                <img class="social__network" src="assets/images/linkedin.svg" alt="logo do linkedin">
             </a>
             <a class="network__link" target="_blank" href="https://www.instagram.com/ifalcampuspalmeira/"><img
-                    class="social__network" src="images/instagram.svg"></a>
+                    class="social__network" src="assets/images/instagram.svg" alt="logo do instagram"></a>
         </div>
     </footer>
 </body>

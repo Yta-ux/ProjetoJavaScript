@@ -1,0 +1,12 @@
+@media (min-width: 0px){
+  .about__image{
+    display: none;
+  }
+}
+
+@media (min-width: 550px){
+  .about__image{
+    display: block;
+    min-width: 50%;
+  }
+}

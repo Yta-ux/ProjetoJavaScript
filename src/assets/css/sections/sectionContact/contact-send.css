@@ -1,0 +1,16 @@
+.contact__send{
+  padding: .8rem;
+  background: var(--blue-light);
+  color: var(--white);
+  font-size: 1.5rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+
+  transition: all .2s;
+}
+
+.contact__send:hover{
+  background-color: rgba(41, 152, 183, .8);
+}

@@ -1,0 +1,8 @@
+.return {
+  color: var(--gray);
+  transition: all .2s;
+}
+
+.return:hover {
+  color: var(--blue);
+}

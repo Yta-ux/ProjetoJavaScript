@@ -1,0 +1,13 @@
+@media (min-width: 0px) {
+  .creator__atribute {
+    display: none;
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 460px) {
+  .creator__atribute {
+    display: flex;
+  }
+}

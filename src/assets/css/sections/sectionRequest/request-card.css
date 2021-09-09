@@ -1,0 +1,31 @@
+@media (min-width: 0px) {
+  .request__card {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 5rem;
+    line-height: 2;
+    filter: drop-shadow(0px 0px 10px var(--shadow));
+  
+    transition: all .2s;
+  }
+  
+}
+
+@media (min-width: 600px) {
+  .request__card {
+    width: 90%;
+    padding: 6.8rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .request__card {
+    width: 80%;
+    box-shadow: var(--black) 70px 60px; 
+  }
+}
+
+.request__card:hover {
+  transform: translate(0, -10px);
+}

@@ -1,0 +1,32 @@
+@media screen and (min-width: 0px) {
+  .about__title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .about__text {
+    font-size: 1.3rem;
+    line-height: 2;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .about__title {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .about__text {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .about__title {
+    font-size: 2.5rem;
+  }
+
+  .about__text {
+    font-size: 2.2rem;
+  }
+}

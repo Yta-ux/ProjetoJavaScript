@@ -1,93 +1,129 @@
-<!-- 
--------Lista de Exercício --------
-Curso: Informática
-Disciplina: Programação Web I
-Equipe: 7
-Nome: Lavínia Leite da Silva
-Matrícula: 2019322657
--->
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Javascript | Questão 1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript | Questão 1</title>
 
-  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
 
-  <link rel="stylesheet" href="../css/q0.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/request.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/request-card.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/request-title.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/request-description.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/creator-atribute.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/atribute-image.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/atribute-infos.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/infos-name.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/infos-network.css">
+
+    <link rel="stylesheet" href="../assets/css/sections/sectionDetails/details.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionDetails/details-focus.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionDetails/focus-image.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionDetails/details-description.css">
+
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/response.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/response-execution.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/execution-input.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/execution-save.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/response-area.css">
+
+    <link rel="stylesheet" href="../assets/css/sections/sectionNavigation/navigation.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionNavigation/return.css">
+
+    <link rel="stylesheet" href="../assets/css/questions/q1.css">
+
+    <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 
 <body>
 
-  <header>
-    <a href="../index.html"><img src="../images/logo_ifal.png" class="header__image" /></a>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="../team.html">Equipe</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <a href="../index.html"><img src="../assets/images/logo_ifal.png" class="header__image" /></a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="../team.html">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="request">
-      <div class="request__card">
-        <h1 class="request__title">Questão 1</h1>
-        <p class="request__description">Cálculo da média, moda e mediana, feito a partir da inserção de 13
-          (treze) notas.</p>
-        <a href="https://www.instagram.com/rick_soars/" target="_blank" class="request__creator">
-          <div class="creator__atribute">
-            <img src="../images/pic_ricardo.jpeg" class="atribute__image">
-            <div class="atribute__infos">
-              <p class="infos__name">Ricardo Soares</p>
-              <p class="infos__network">@rick_soars</p>
+    <main>
+        <section class="request">
+            <div class="request__card">
+                <h1 class="request__title">Questão 1</h1>
+                <p class="request__description">Cálculo da média, moda e mediana, feito a partir da inserção de 13
+                    (treze) notas.</p>
+                <a href="https://www.instagram.com/rick_soars/" target="_blank" class="request__creator">
+                    <div class="creator__atribute">
+                        <img src="../assets/images/pic_ricardo.jpeg" class="atribute__image"
+                            alt="Foto do integrante Ricardo Soares">
+                        <div class="atribute__infos">
+                            <p class="infos__name">Ricardo Soares</p>
+                            <p class="infos__network">@rick_soars</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="details">
-      <div class="details__focus">
-        <h2 class="focus__title">Você precisa saber...</h2>
-        <img class="focus__image" src="../images/flame1.png" alt />
-      </div>
-      <p class="details__description">Insira 13 notas no campo abaixo para verificar a média, a mediana, a moda e o somatório, de deve estar sendo dividido pela moda, dessas notas.<br>
-        Todas essas informações devem aparecer na área que está ao lado, sendo identificados pela cor: a média é cinza, mediana é amarelo, a moda é laranja e a somatória é azul.</p>
-    </section>
-    <section class="response">
-      <div class="response__execution">
-        <input type="text" class="execution__input" placeholder="Digite a nota">
-        <button class="execution__save">Salvar</button>
-      </div>
+        </section>
+        <section class="details">
+            <div class="details__focus">
+                <h2 class="focus__title">Você precisa saber...</h2>
+                <img class="focus__image" src="../assets/images/detalhes.png"
+                    alt="ilustração de uma menina estudando e se divertindo com ciência" />
+            </div>
+            <p class="details__description">Insira 13 notas de uma só vez, separadas por espaço no campo abaixo para
+                verificar a média, a mediana, a moda e o
+                somatório, de deve estar sendo dividido pela moda, dessas notas.<br>
+                Todas essas informações devem aparecer na área que está ao lado, sendo identificados pela cor: a média é
+                cinza,
+                mediana é amarelo, a moda é laranja e a somatória é azul.</p>
+        </section>
+        <section class="response">
+            <div class="response__execution">
+                <input type="text" class="execution__input" id="input" placeholder="ex: 10 9 8">
+                <button class="execution__save" onclick="resultado()">Salvar</button>
+            </div>
 
-      <div class="response__area"></div>
-    </section>
-  </main>
+            <div class="response__area">
+                <p id="output"> </p>
+                <p id="output2"> </p>
+                <p id="output3"> </p>
+                <p id="output4"> </p>
+            </div>
+        </section>
+        <section class="navigation">
+            <a class="return" href="../index.html">Voltar ao Inicio</a>
+        </section>
+    </main>
 
-  <footer>
-    <div class="ifal">
-      <img src="../images/logo_ifal_white.png" class="ifal__image" alt>
-      <div class="ifal__infos">
-        <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
-        <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
-        <p>Informática - Programação Web I - 2021</p>
-        <p>Docente: Ítalo Arruda</p>
-      </div>
-    </div>
-    <div class="networks">
-      <a class="network__link" target="_blank"
-        href="https://github.com/Ednaldo-byte/ProjetoJavaScript/tree/main/P%20WEB"><img class="social__network"
-          src="../images/github.svg"></a>
-      <a class="network__link" target="_blank" href="https://www.linkedin.com/in/%C3%ADtalo-gustavo-310a76207">
-        <img class="social__network" src="../images/linkedin.svg">
-      </a>
-      <a class="network__link" target="_blank" href="https://www.instagram.com/ifalcampuspalmeira/"><img
-          class="social__network" src="../images/instagram.svg"></a>
-    </div>
-  </footer>
+    <footer>
+        <div class="ifal">
+            <img src="../assets/images/logo_ifal_white.png" class="ifal__image" alt>
+            <div class="ifal__infos">
+                <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
+                <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
+                <p>Informática - Programação Web I - 2021</p>
+                <p>Docente: Ítalo Arruda</p>
+            </div>
+        </div>
+        <div class="networks">
+            <a class="network__link" target="_blank" href="https://github.com/Ednaldo-byte/ProjetoJavaScript"><img
+                    class="social__network" src="../assets/images/github.svg" alt="logo do github"></a>
+            <a class="network__link" target="_blank" href="https://www.linkedin.com/in/%C3%ADtalo-gustavo-310a76207">
+                <img class="social__network" src="../assets/images/linkedin.svg" alt="logo do linkedin">
+            </a>
+            <a class="network__link" target="_blank" href="https://www.instagram.com/ifalcampuspalmeira/"><img
+                    class="social__network" src="../assets/images/instagram.svg" alt="logo do instagram"></a>
+        </div>
+    </footer>
+
+    <script src="../assets/scripts/q1.js"></script>
 </body>
 
 </html>

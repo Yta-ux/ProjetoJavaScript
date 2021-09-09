@@ -1,0 +1,26 @@
+.response__area {
+  height: 300px;
+  background-color: var(--blue);
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+#output {
+  color: blue;
+  text-decoration: underline;
+}
+
+#output2 {
+  color: orange;
+  text-decoration: underline;
+}
+
+#output3 {
+  color: yellow;
+  text-decoration: underline;
+}
+
+#output4 {
+  color: gray;
+  text-decoration: underline;
+}

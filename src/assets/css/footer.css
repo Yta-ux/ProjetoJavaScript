@@ -1,0 +1,64 @@
+.ifal__image {
+  width: 50px;
+  height: 60px;
+  margin-right: 2rem;
+}
+
+.ifal {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.networks {
+  display: flex;
+}
+
+.network__link:not(:last-child) {
+  margin-right: 1.2rem;
+}
+
+.social__network {
+  width: 3.5rem;
+}
+
+@media (min-width: 0px) {
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 6rem;
+    background-color: var(--black);
+  }
+
+  .ifal__image {
+    display: none;
+  }
+
+  .ifal {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ifal__image {
+    display: block;
+    width: 50px;
+    height: 60px;
+    margin-right: 2rem;
+  }
+
+  .ifal {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
