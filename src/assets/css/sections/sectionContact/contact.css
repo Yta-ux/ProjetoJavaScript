@@ -1,0 +1,18 @@
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 0px) {
+  .contact{
+    padding: 10rem 2rem;
+  }
+  
+}
+
+@media screen and (min-width: 490px) {
+  .contact{
+    padding: 6.4rem 4.8rem;
+  }
+}

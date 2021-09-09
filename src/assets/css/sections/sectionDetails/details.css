@@ -1,0 +1,18 @@
+@media (min-width: 0px){
+  .details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--blue);
+    padding: 10rem 4rem;
+    color: var(--white);
+  }
+}
+
+@media (min-width: 700px){
+  .details{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

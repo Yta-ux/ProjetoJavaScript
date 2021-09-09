@@ -2,95 +2,132 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Javascript | Questão 3</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript | Questão 3</title>
 
-  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
 
-  <link rel="stylesheet" href="../css/q0.css">
-  <link rel="stylesheet" href="../css/q3.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/request.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/request-card.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/request-title.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/request-description.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/creator-atribute.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/atribute-image.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/atribute-infos.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/infos-name.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionRequest/infos-network.css">
+
+    <link rel="stylesheet" href="../assets/css/sections/sectionDetails/details.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionDetails/details-focus.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionDetails/focus-image.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionDetails/details-description.css">
+
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/response.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/response-execution.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/execution-input.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/execution-save.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionResponse/response-area.css">
+
+    <link rel="stylesheet" href="../assets/css/sections/sectionNavigation/navigation.css">
+    <link rel="stylesheet" href="../assets/css/sections/sectionNavigation/return.css">
+
+    <link rel="stylesheet" href="../assets/css/questions/q3.css">
+
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
 </head>
 
 <body>
 
-  <header>
-    <a href="../index.html"><img src="../images/logo_ifal.png" class="header__image" /></a>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="../team.html">Equipe</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <a href="../index.html"><img src="../assets/images/logo_ifal.png" class="header__image" /></a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="../team.html">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="request">
-      <div class="request__card">
-        <h1 class="request__title">Questão 3</h1>
-        <p class="request__description">Verificação de qual é o maior/menor valor e associá-los a uma signo dos
-          zodíaco, feito a partir da
-          inserção de 9 (nove) números.</p>
-        <a href="https://www.instagram.com/vitalfausto/" target="_blank" class="request__creator">
-          <div class="creator__atribute">
-            <img src="../images/pic_fausto.jpeg" class="atribute__image">
-            <div class="atribute__infos">
-              <p class="infos__name">Fausto Vital</p>
-              <p class="infos__network">@vitalfausto</p>
+    <main>
+        <section class="request">
+            <div class="request__card">
+                <h1 class="request__title">Questão 3</h1>
+                <p class="request__description">Verificação de qual é o maior/menor valor e associá-los a uma signo dos
+                    zodíaco, feito a partir da
+                    inserção de 9 (nove) números.</p>
+                <a href="https://www.instagram.com/vitalfausto/" target="_blank" class="request__creator">
+                    <div class="creator__atribute">
+                        <img src="../assets/images/pic_fausto.jpeg" class="atribute__image"
+                            alt="Foto do integrante Fausto">
+                        <div class="atribute__infos">
+                            <p class="infos__name">Fausto Vital</p>
+                            <p class="infos__network">@vitalfausto</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="details">
-      <div class="details__focus">
-        <h2 class="focus__title">Você precisa saber...</h2>
-        <img class="focus__image" src="../images/flame1.png" alt />
-      </div>
-      <p class="details__description">Insira 9 números no campo abaixo para verificar quem é o maior, o menor e o número do meio. Cada número, vai estar relacionado com um signo dos zodíaco chinês. Caso o número não esteja relacionado a algum signo, vai ser exibido um valor diferente.</p>
-    </section>
-    <section class="response">
-      <div class="response__execution">
-        <input type="text" class="execution__input" id="input" placeholder="Digite os valores">
+        </section>
+        <section class="details">
+            <div class="details__focus">
+                <h2 class="focus__title">Você precisa saber...</h2>
+                <img class="focus__image" src="../assets/images/detalhes.png"
+                    alt="ilustração de uma menina estudando e se divertindo com ciência" />
+            </div>
+            <p class="details__description">Insira 9 números, um de cada vez, no campo abaixo para verificar quem é o
+                maior, o
+                menor e o número do meio. Cada número, vai estar relacionado com um signo dos zodíaco chinês. Caso o
+                número não
+                esteja relacionado a algum signo, vai ser exibido um valor diferente.</p>
+        </section>
+        <section class="response">
+            <div class="response__execution">
+                <input type="text" class="execution__input" id="input" placeholder="Digite os valores">
+                <p id="counter"></p>
+                <button class="execution__save" onclick="output()">Submeter</button>
+            </div>
 
-        <p id="counter"></p>
-        <button class="execution__save" onclick="output()">Submeter</button>
-      </div>
+            <div class="response__area">
+                <span class="p1"></span>
+                <div class="hide" id="line"></div>
 
-      <div class="response__area">
-        <span class="p1"></span>
-        <div class="hide" id="line"></div>
+                <h5 class="titulo"></h5>
 
-        <h5 class="titulo"></h5>
-    
-        <span class="p2"></span>
-      </div>
-    </section>
-  </main>
+                <span class="p2"></span>
+            </div>
+        </section>
+        <section class="navigation">
+            <a class="return" href="../index.html">Voltar ao Inicio</a>
+        </section>
+    </main>
 
-  <footer>
-    <div class="ifal">
-      <img src="../images/logo_ifal_white.png" src="../images/signos/" class="ifal__image" alt>
-      <div class="ifal__infos">
-        <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
-        <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
-        <p>Informática - Programação Web I - 2021</p>
-        <p>Docente: Ítalo Arruda</p>
-      </div>
-    </div>
-    <div class="networks">
-      <a class="network__link" target="_blank"
-        href="https://github.com/Ednaldo-byte/ProjetoJavaScript/tree/main/P%20WEB"><img class="social__network"
-          src="../images/github.svg"></a>
-      <a class="network__link" target="_blank" href="https://www.linkedin.com/in/%C3%ADtalo-gustavo-310a76207">
-        <img class="social__network" src="../images/linkedin.svg">
-      </a>
-      <a class="network__link" target="_blank" href="https://www.instagram.com/ifalcampuspalmeira/"><img
-          class="social__network" src="../images/instagram.svg"></a>
-    </div>
-  </footer>
-  <script src="../scripts/q3.js"></script>
+    <footer>
+        <div class="ifal">
+            <img src="../assets/images/logo_ifal_white.png" class="ifal__image" alt>
+            <div class="ifal__infos">
+                <p>Instituto Federal de Alagoas - Campus Palmeira dos Índios</p>
+                <p>Av. Alagoas - Palmeira de Fora, Palmeira dos Índios - AL, 57608-180</p>
+                <p>Informática - Programação Web I - 2021</p>
+                <p>Docente: Ítalo Arruda</p>
+            </div>
+        </div>
+        <div class="networks">
+            <a class="network__link" target="_blank" href="https://github.com/Ednaldo-byte/ProjetoJavaScript"><img
+                    class="social__network" src="../assets/images/github.svg" alt="logo do github"></a>
+            <a class="network__link" target="_blank" href="https://www.linkedin.com/in/%C3%ADtalo-gustavo-310a76207">
+                <img class="social__network" src="../assets/images/linkedin.svg" alt="logo do linkedin">
+            </a>
+            <a class="network__link" target="_blank" href="https://www.instagram.com/ifalcampuspalmeira/"><img
+                    class="social__network" src="../assets/images/instagram.svg" alt="logo do instagram"></a>
+        </div>
+    </footer>
+
+    <script src="../assets/scripts/q3.js"></script>
 </body>
 
 </html>

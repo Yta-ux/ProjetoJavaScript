@@ -1,0 +1,12 @@
+@media (min-width:0px) {
+  .request__title{
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width:470px) {
+  .request__title{
+    font-size: 3.8rem;
+    align-self: flex-start;
+  }
+}

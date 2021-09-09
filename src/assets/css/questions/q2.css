@@ -1,0 +1,65 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 10px;
+  word-wrap: break-word;
+}
+
+td,
+th {
+  text-align: center;
+  padding: .8rem;
+}
+
+.quadrado {
+  color: red;
+}
+
+.cubo {
+  color: blue;
+}
+
+.fib {
+  color: green;
+}
+
+.fatorial {
+  color: purple;
+}
+
+.raiz {
+  color: gray;
+}
+
+.response__area {
+  padding: 1rem;
+}
+
+
+@media (min-width: 500px) {
+  table {
+    font-size: 15px;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 590px) {
+  table {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 500px) {
+  table {
+    font-size: 10px;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 370px) {
+  table {
+    font-size: 6px;
+    word-wrap: break-word;
+  }
+}

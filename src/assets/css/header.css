@@ -1,0 +1,41 @@
+header {
+  background: #fdfdfd;
+  display: flex;
+  padding: 2rem 6rem;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__image {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__link {
+  font-size: 1.8rem;
+  color: var(--black);
+  padding: 3rem;
+
+  transition: all .2s;
+}
+
+.menu__link:hover {
+  color: var(--gray);
+}
+
+@media (min-width: 550px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__image {
+    display: block;
+    width: 23px;
+  }
+}

@@ -1,0 +1,7 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10rem 6rem;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,27 @@
+.contact__form{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+  padding: 6.8rem 4.2rem;
+  border-radius: 5px;
+  height: 550px;
+  box-shadow: 0 0 1.5rem var(--shadow);
+}
+
+@media screen and (min-width: 0px) {
+  .contact__form{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .contact__form{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__form{
+    width: 35%;
+  }
+}

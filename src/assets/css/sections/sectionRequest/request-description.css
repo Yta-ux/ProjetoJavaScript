@@ -1,0 +1,17 @@
+@media (min-width:0px) {
+  .request__description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 670px) {
+  .request__description {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .request__description {
+    font-size: 1.8rem;
+  }
+}
