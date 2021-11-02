@@ -9,8 +9,6 @@
 
 <div align="center">
       <img src=".github/home.png" width="600px"/>
-<!--       <img src=".github/home2.png" width="450px"/> -->
-<!--       <img src=".github/home3.png" width="450px"/> -->
 </div>
   
 
